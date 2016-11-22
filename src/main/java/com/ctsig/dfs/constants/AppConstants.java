@@ -9,5 +9,5 @@ package com.ctsig.dfs.constants;
  */
 public class AppConstants {
 
-public static String  HTTP_PRODOCOL = "" ;
+public static String  HTTP_PRODOCOL = "http://" ;
 }

@@ -1,5 +1,10 @@
 package com.ctsig.dfs.config;
 
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.PropertySources;
+
 /**
  * @version： V1.0.0
  * @des：
@@ -7,6 +12,9 @@ package com.ctsig.dfs.config;
  * @email: shenzhaoxiang@gmail.com
  * @date: 2016/11/14
  */
+@Configuration
+@ComponentScan
+@PropertySources(value = @PropertySource("classpath:fastdfs.properties"))
 public class AppConfig {
 
     private String fdfsStoragePort ;
